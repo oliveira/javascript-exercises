@@ -16,4 +16,8 @@ describe("getMessage", () => {
   it("should return the given number when is not divisible by 3 and 5", () => {
     expect(getMessage(1)).toBe("1");
   });
+
+  it("should throw error when the input is not a number", () => {
+    expect(() => getMessage("1")).toThrow("Invalid input. Number expected.");
+  });
 });

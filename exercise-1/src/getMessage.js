@@ -1,18 +1,19 @@
-import {
-  isDivisibleByThree,
-  isDivisibleByFive,
-  isDivisibleByThreeAndFive,
-} from "./constraints/index.js";
+import { isMultipleOfThree, isMultipleOfFive } from "./utils/index.js";
 
 function getMessage(number) {
-  if (isDivisibleByThreeAndFive(number)) {
-    return "Visual Nuts";
-  } else if (isDivisibleByThree(number)) {
-    return "Visual";
-  } else if (isDivisibleByFive(number)) {
-    return "Nuts";
-  } else {
-    return String(number);
+  if (typeof number !== "number") {
+    throw new Error("Invalid input. Number expected.");
+  }
+
+  switch (true) {
+    case isMultipleOfThree(number) && isMultipleOfFive(number):
+      return "Visual Nuts";
+    case isMultipleOfThree(number):
+      return "Visual";
+    case isMultipleOfFive(number):
+      return "Nuts";
+    default:
+      return String(number);
   }
 }
 
