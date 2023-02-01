@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test:unit": "node --experimental-vm-modules ./node_modules/.bin/jest -c jest.unit.config.js --verbose",
+    "coverage": "node --experimental-vm-modules ./node_modules/.bin/jest -c jest.unit.config.js --coverage"
+  },
+  "author": "Lucas Oliveira",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "jest": "29.4.1"
+  }
+}
