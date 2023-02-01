@@ -1,19 +1,22 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width="127px" height="127px" align="left"/>
 
-# exercises
+# exercise 2
 
 Code challenge pipipi popopo.
 
 ## Table of Contents
 
 - [Dependencies](#dependencies)
-- [Exercise 2](#exercise-2)
+- [Description](#description)
+- [Development](#development)
+  - [Run tests](#run-tests)
+  - [Coverage](#coverage)
 
 ## Dependencies
 
 - [Node@16.18+](https://nodejs.org/en/download/)
 
-## Exercise 2
+## Description
 
 This exercise expect a solution that receives a json object and return:
 
