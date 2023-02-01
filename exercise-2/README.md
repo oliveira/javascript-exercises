@@ -26,7 +26,7 @@ This exercise expect a solution that receives a json object and return:
 - The country with the highest number of official languages.
 - The most common language(s) of all countries.
 
-The first information could be obtained counting the countries presented on the json. With an incompleted json, a wrong result would be presented. So this information will be taken from a environment variable. This approach is safer than the other, since the number of countries doesn't usually change.
+The first information could be obtained counting the countries presented on the json. With an incompleted json, a wrong result would be presented. So this information will be taken from an environment variable. This approach is safer than the other, since the number of countries doesn't usually change.
 
 ```bash
 export TOTAL_COUNTRIES="195"
@@ -45,6 +45,10 @@ npm start
 ### Run tests
 
 Run all unit tests
+
+```bash
+npm install
+```
 
 ```bash
 npm run test:unit

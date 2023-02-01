@@ -44,6 +44,10 @@ npm start
 Run all unit tests
 
 ```bash
+npm install
+```
+
+```bash
 npm run test:unit
 ```
 
